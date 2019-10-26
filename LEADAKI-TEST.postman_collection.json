@@ -10,7 +10,7 @@
 		{
 			"name": "NEW WEBSITE",
 			"request": {
-				"url": "http://localhost:3000/api/websites",
+				"url": "https://leadaki-dev-test.herokuapp.com/api/websites",
 				"method": "POST",
 				"header": [
 					{
@@ -36,12 +36,13 @@
 			"name": "GET ALL WEBSITES",
 			"request": {
 				"url": {
-					"raw": "http://localhost:3000/api/websites?limit=15",
-					"protocol": "http",
+					"raw": "https://leadaki-dev-test.herokuapp.com/api/websites?limit=15",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"leadaki-dev-test",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"api",
 						"websites"
@@ -72,7 +73,7 @@
 		{
 			"name": "GET WEBSITE",
 			"request": {
-				"url": "http://localhost:3000/api/websites/5db45bfd5504d927b865d2c6",
+				"url": "https://leadaki-dev-test.herokuapp.com/api/websites/5db45bfd5504d927b865d2c6",
 				"method": "GET",
 				"header": [
 					{
@@ -89,7 +90,7 @@
 		{
 			"name": "DELETE WEBSITE",
 			"request": {
-				"url": "http://localhost:3000/api/websites/5db45bfd5504d927b865d2c6",
+				"url": "https://leadaki-dev-test.herokuapp.com/api/websites/5db45bfd5504d927b865d2c6",
 				"method": "DELETE",
 				"header": [
 					{
