@@ -1,0 +1,107 @@
+{
+	"variables": [],
+	"info": {
+		"name": "LEADAKI-TEST",
+		"_postman_id": "9dafb521-93c5-1aff-1ba8-e3f91970b372",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "NEW WEBSITE",
+			"request": {
+				"url": "http://localhost:3000/api/websites",
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456789",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"domain\": \"test.com\", \n\t\"ownerId\": 123456789, \n\t\"leadCount\": 0, \n\t\"plan\": \"GOLD\", \n\t\"labels\": [\"PRIVATE\", \"UPGRADED\", \"AVALIABLE\"]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL WEBSITES",
+			"request": {
+				"url": {
+					"raw": "http://localhost:3000/api/websites?limit=15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"websites"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "15",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456789",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET WEBSITE",
+			"request": {
+				"url": "http://localhost:3000/api/websites/5db45bfd5504d927b865d2c6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456789",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE WEBSITE",
+			"request": {
+				"url": "http://localhost:3000/api/websites/5db45bfd5504d927b865d2c6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "123456789",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
